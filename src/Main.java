@@ -104,6 +104,20 @@ public class Main {
         System.out.println("Задача_5");
         System.out.println();
 
+        int initialDeposit = 15_000;
+        double total = initialDeposit;
+        int month = 1;
+
+        System.out.println("Первоначальная сумма вклада " + initialDeposit);
+
+        for (; total <= 12_000_000; month++) {
+            total = total + (total * 0.07);
+            String result = String.format("%.4f", total);
+
+            if (month % 6 == 0) {
+                System.out.println(month + " месяц сумма накоплений составляет " + (result));
+            }
+        }
 
         System.out.println();
         System.out.println();
