@@ -15,14 +15,20 @@ public class Main {
         System.out.println("Задача_1");
         System.out.println();
 
-        int savedMoney = 15_000;
+        int monthlyContribution = 15_000;
         int month = 1;
+        double total = 0;
 
-        while (savedMoney <= 2_460_000 ) {
-            System.out.println("Месяц " + month + " сумма накоплений равна " + savedMoney);
-            savedMoney = savedMoney + 15_000;
+        while (total <= 2_460_000 ) {
+
+            total = total + total/100;
+            total = total + monthlyContribution;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + total);
             month = month + 1;
         }
+
+        System.out.println();
+        System.out.println("2 460 000 рублей будет накоплено через " + (month - 1) + " месяцев");
 
         System.out.println();
         System.out.println();
@@ -32,6 +38,8 @@ public class Main {
 
         System.out.println("Задача_2");
         System.out.println();
+
+
 
 
         System.out.println();
