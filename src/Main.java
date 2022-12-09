@@ -39,6 +39,19 @@ public class Main {
         System.out.println("Задача_2");
         System.out.println();
 
+        int a = 0;
+
+        while (a < 10) {
+            a += 1;
+            System.out.print(a + " ");
+        }
+
+        System.out.println();
+
+        for (a = 10; a > 0 && a <= 10; a-- ) {
+            System.out.print(a + " ");
+        }
+
 
 
 
