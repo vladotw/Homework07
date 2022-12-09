@@ -154,6 +154,13 @@ public class Main {
         System.out.println("Задача_7");
         System.out.println();
 
+        int friday = 2;
+
+        for (; friday <= 31; friday += 7) {
+
+            System.out.println("Сегодня пятница, " + friday + "-е число. " +
+                    "Необходимо подготовить отчёт");
+        }
 
         System.out.println();
         System.out.println();
