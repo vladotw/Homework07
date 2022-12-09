@@ -90,8 +90,9 @@ public class Main {
 
         while (total <= 12_000_000) {
             total = total + (total * percent);
+            String result = String.format("%.4f", total);
             month = month + 1;
-            System.out.println(month + " месяц сумма накоплений составляет " + total);
+            System.out.println(month + " месяц сумма накоплений составляет " + (result));
         }
 
         System.out.println();
