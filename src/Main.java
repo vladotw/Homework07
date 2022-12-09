@@ -52,9 +52,6 @@ public class Main {
             System.out.print(a + " ");
         }
 
-
-
-
         System.out.println();
         System.out.println();
     }
@@ -64,6 +61,16 @@ public class Main {
         System.out.println("Задача_3");
         System.out.println();
 
+        int totalPopulation = 12_000_000;
+        int year = 1;
+
+        for (; year <=10; year++) {
+            int birthRate = (totalPopulation * 17) / 1000;
+            int mortality = (totalPopulation * 8) / 1000;
+            totalPopulation = totalPopulation + birthRate - mortality;
+            System.out.println("Год " + year + ", численность населения будет составлять " +
+                    totalPopulation + " человек");
+        }
 
         System.out.println();
         System.out.println();
