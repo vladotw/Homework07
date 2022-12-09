@@ -170,6 +170,16 @@ public class Main {
         System.out.println("Задача_8");
         System.out.println();
 
+        int presentYear = 2022;
+        int pastYear = presentYear - 200;
+        int futureYear = presentYear + 100;
+
+        for (int i = pastYear; i <= futureYear; i++) {
+            if (i % 79 == 0) {
+                System.out.println(i);
+            }
+        }
+
 
 
     }
