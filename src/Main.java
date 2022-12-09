@@ -81,7 +81,18 @@ public class Main {
         System.out.println("Задача_4");
         System.out.println();
 
+        int initialDeposit = 15_000;
+        double percent = 0.07;
+        double total = initialDeposit;
+        int month = 0;
 
+        System.out.println("Первоначальная сумма вклада " + initialDeposit);
+
+        while (total <= 12_000_000) {
+            total = total + (total * percent);
+            month = month + 1;
+            System.out.println(month + " месяц сумма накоплений составляет " + total);
+        }
 
         System.out.println();
         System.out.println();
