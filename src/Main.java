@@ -18,8 +18,9 @@ public class Main {
         int monthlyContribution = 15_000;
         int month = 1;
         double total = 0;
+        double maxSumm = 2_460_000;
 
-        while (total <= 2_460_000 ) {
+        while (total <= maxSumm ) {
 
             total = total + total/100;
             total = total + monthlyContribution;
@@ -48,7 +49,7 @@ public class Main {
 
         System.out.println();
 
-        for (a = 10; a > 0 && a <= 10; a-- ) {
+        for (a = 10; a > 0; a--) {
             System.out.print(a + " ");
         }
 
@@ -63,8 +64,9 @@ public class Main {
 
         int totalPopulation = 12_000_000;
         int year = 1;
+        int years = 10;
 
-        for (; year <=10; year++) {
+        for (; year <=years; year++) {
             int birthRate = (totalPopulation * 17) / 1000;
             int mortality = (totalPopulation * 8) / 1000;
             totalPopulation = totalPopulation + birthRate - mortality;
@@ -85,10 +87,11 @@ public class Main {
         double percent = 0.07;
         double total = initialDeposit;
         int month = 0;
+        double maxSumm = 12_000_000;
 
         System.out.println("Первоначальная сумма вклада " + initialDeposit);
 
-        while (total <= 12_000_000) {
+        while (total <= maxSumm) {
             total = total + (total * percent);
             String result = String.format("%.4f", total);
             month = month + 1;
@@ -107,11 +110,13 @@ public class Main {
         int initialDeposit = 15_000;
         double total = initialDeposit;
         int month = 1;
+        double maxSumm = 12_000_000;
+        double percent = 0.07;
 
         System.out.println("Первоначальная сумма вклада " + initialDeposit);
 
-        for (; total <= 12_000_000; month++) {
-            total = total + (total * 0.07);
+        for (; total <= maxSumm; month++) {
+            total = total + (total * percent);
             String result = String.format("%.4f", total);
 
             if (month % 6 == 0) {
@@ -132,11 +137,12 @@ public class Main {
         double total = initialDeposit;
         int month = 1;
         int fullTime = 9 * 12;
+        double percent = 0.07;
 
         System.out.println("Первоначальная сумма вклада " + initialDeposit);
 
         for (; month <= fullTime; month++) {
-            total = total + (total * 0.07);
+            total = total + (total * percent);
             String result = String.format("%.4f", total);
 
             if (month % 6 == 0) {
